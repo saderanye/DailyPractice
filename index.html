@@ -12,6 +12,7 @@
     <script>
         // 6/10
         let numbers = [1, 2, 3, 4];
+        
         function sumArray(numbers) {
             let total = 0;
             for (let i = 0; i < numbers.length; i++) {
@@ -20,7 +21,37 @@
 
             return total;
         }
-        console.log(sumArray(numbers)); // should log 10
+
+        function doubleArray(numbers) {
+            let newArray = [];
+            for (let i = 0; i < numbers.length; i++) {
+                newArray.push(numbers[i] * 2)
+            }
+            return newArray;
+        }
+
+        console.log(sumArray(numbers)); // should log
+        console.log(doubleArray(numbers)); // should log [2, 4, 6,
+
+
+
+        //Another practice 6/10
+
+        let arrayWords = ["apple", "dog", "elephant", "cat", "juice"];
+        
+        function filterShortWords(arrayWords) {
+            let shortWords = [];
+
+            for (let i = 0; i < arrayWords.length; i++) {
+                if (arrayWords[i].length <= 5) {
+                    shortWords.push(arrayWords[i]);
+                }
+            }
+            
+            return shortWords;
+        };
+
+        console.log(filterShortWords(arrayWords)); // should log ["apple", "dog", "cat"]
 
 
         
