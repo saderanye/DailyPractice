@@ -73,6 +73,25 @@
 
         console.log(filterEvenNumbers());
 
+        // 6/12
+        function capitalizeWords() {
+            let words = ["apple", "banana", "cherry"];
+            let capitalizedWordsArrray = [];
+            
+            for (let i = 0; i < words.length; i++) {
+                let word = words[i];
+                let firstLetter = word[0];
+                let capital = firstLetter.toUpperCase();
+                let rest = word.slice(1);
+                let capitalizedWord = capital + rest;
+                capitalizedWordsArrray.push(capitalizedWord);
+            }
+
+            return capitalizedWordsArrray;
+        };
+
+        console.log(capitalizeWords());
+
 
 
 
