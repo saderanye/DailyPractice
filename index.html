@@ -166,6 +166,24 @@
 
         console.log(findAverage());
 
+        // 6/17 -Title Case
+
+        function titleCase() {
+            let phrase = "the quick brown fox";
+            let titleArray = phrase.split(" ");
+
+            for (let i = 0; i < titleArray.length; i++) {
+                let titleWord = titleArray[i];
+                let capitalWord = titleWord[0].toUpperCase() + titleWord.slice(1);
+                titleArray[i] = capitalWord;
+            }
+
+            return titleArray.join(" ");
+        };
+
+        console.log(titleCase());
+
+
             
 
 
