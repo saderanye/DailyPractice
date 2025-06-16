@@ -12,7 +12,7 @@
 
 
     <script>
-        // 6/10
+        // 6/10 - Double numbers in the array
         let numbers = [1, 2, 3, 4];
 
         function sumArray(numbers) {
@@ -37,7 +37,7 @@
 
 
 
-        //Another practice 6/10
+        //Another practice 6/10 - Filter words less then 5 characters
 
         let arrayWords = ["apple", "dog", "elephant", "cat", "juice"];
 
@@ -73,7 +73,7 @@
 
         console.log(filterEvenNumbers());
 
-        // 6/12
+        // 6/12 - Capitalize Words
         function capitalizeWords() {
             let words = ["apple", "banana", "cherry"];
             let capitalizedWordsArrray = [];
@@ -93,7 +93,7 @@
         console.log(capitalizeWords());
 
 
-        // 6/13
+        // 6/13 - Count How many times a letter appears
         function countLetters() {
             let wordCount = "banana";
             let letter = "a";
@@ -113,7 +113,23 @@
 
 
 
-        // 6/14
+        // 6/14 - Find Longest Word
+
+        function findLongestWord() {
+            let longestWordArray = ["apple", "banana", "pear", "watermelon"];
+            let longestWord = "";
+
+            for (let i = 0; i < longestWordArray.length; i++) {
+                if (longestWordArray[i].length > longestWord.length) {
+                    longestWord = longestWordArray[i];
+                }
+
+            };
+
+            return longestWord;
+        };
+
+        console.log(findLongestWord());
 
 
 
