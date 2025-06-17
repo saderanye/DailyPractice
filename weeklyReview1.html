@@ -89,6 +89,55 @@
         console.log(capitalizeWords());
 
 
+        // Count Letters
+        function countLetters(){
+            let word = "bananaaaaa";
+            let letter = "a";
+            let count = 0;
+
+            for (let i = 0; i < word.length; i++) {
+                if (word[i] === letter) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(countLetters());
+
+
+        // Find Longest Word
+        function findLongestWord() {
+            let words = ["apple", "banana", "cherry", "date", "elderberry"];
+            let longestWord = " ";
+            for (let i = 0; i < words.length; i++) {
+                if (words[i].length > longestWord.length) {
+                    longestWord = words[i];
+                }
+            }
+            return longestWord;
+        }
+
+        console.log(findLongestWord());
+
+
+        // Count Vowels
+        function countVowels() {
+            let word = "avocado";
+            let count = 0;
+            let vowels = ["a", "e", "i", "o", "u"];
+
+            for(let i = 0; i < word.length; i++){
+                let letter  = word[i].toLowerCase();
+                if (vowels.includes(letter)) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(countVowels());
+
+
 
 
 
