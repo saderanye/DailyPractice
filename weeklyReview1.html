@@ -24,6 +24,70 @@
         console.log(sumArray());
 
 
+        // Double Array
+        function doubleArray() {
+            let numbersArray = [1, 2, 3, 4, 5];
+            let doubleSum = 0;
+
+            for(let i = 0; i < numbersArray.length; i++) {
+                doubleSum += numbersArray[i] * 2;
+            }
+            return doubleSum;
+        }
+
+        console.log(doubleArray());
+
+
+        // Filter Short Words
+        function filterShortWords() {
+            let words = ["apple", "banana", "cat", "dog", "elephant"];
+            let shortWords = [];
+
+            for(i = 0; i < words.length; i++) {
+                if(words[i].length < 5) {
+                    shortWords.push(words[i]);
+                }
+            }
+
+            return shortWords;
+        }
+        console.log(filterShortWords());
+
+
+        // Filter Even Numbers
+        function filterEvenNumbers() {
+            let numbers = [1, 2, 5, 8, 10, 13, 21];
+            let evenNumbers = [];
+
+            for(i = 0; i < numbers.length; i++) {
+                if(numbers[i] % 2 === 0) {
+                    evenNumbers.push(numbers[i]);
+                }
+            }
+            return evenNumbers;
+        }
+
+        console.log(filterEvenNumbers());
+
+
+        // Capitalize Words in an Array
+        function capitalizeWords() {
+            let wordCapital = ["apple", "banana", "cherry"];
+            let capitalizedWords = [];
+
+            for(i = 0; i < wordCapital.length; i++) {
+                let word = wordCapital[i];
+                let firstLetter = word[0];
+                let capital = firstLetter.toUpperCase();
+                let restOfWord = word.slice(1);
+                let capitalWord = capital + restOfWord;
+                capitalizedWords.push(capitalWord);
+            }
+            return capitalizedWords;
+        }
+
+        console.log(capitalizeWords());
+
 
 
 
