@@ -187,6 +187,80 @@
         console.log(reverseWord());
 
 
+        // 6/18 - Removing Duplicates
+        function removeDuplicates() {
+            let duplicateArray = [1, 2, 2, 3, 4, 5, 5];
+            let newArray = [];
+            for(let i = 0; i < duplicateArray.length; i++) {
+                let number = duplicateArray[i];
+                if(!newArray.includes(number)) {
+                    newArray.push(number);
+                }
+            }
+            return newArray;
+        }
+
+        console.log(removeDuplicates());
+
+        // Count words in a sentence
+        function countWords() {
+            let sentence = "I love to eat pizza and ice cream";
+            let words = sentence.split(" ");
+            let count = 0;
+            for(let i = 0; i < words.length; i++) {
+                let word = words[i];
+                count++;
+            }
+            return count;
+        }
+
+        console.log(countWords());
+
+        // FizzBuzz Lite
+        function fizzBuzzLite() {
+            for(let i = 1; i < 20; i++) {
+                if(i % 3 === 0) {
+                    console.log("Fizz");
+                } else if (i % 5 === 0) {
+                    console.log("Buzz");
+                } else if (i % 3 === 0 && i % 5 === 0) {
+                    console.log("FizzBuzz");
+                } else {
+                    console.log(i);
+                }
+            }
+        }
+        fizzBuzzLite();
+
+        // Find the Frist Repeated Word
+        function findFirstRepeatedWord() {
+            let phrase = "I love coding because I love learning";
+            let words = phrase.split(" ");
+            let seen = new Set();
+
+            for(let i = 0; i < words.length; i++) {
+                let word = words[i];
+                if(seen.has(word)) {
+                    return word;
+                } else {
+                    seen.add()
+                }
+            }
+            return null;
+        }
+
+        console.log(findFirstRepeatedWord());
+
+
+
+        // Set automatically ignores duplicates
+        let fruits = new Set();
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("apple"); // This will be ignored
+
+        console.log(fruits); // Set { "apple", "banana" }
+
 
 
 
