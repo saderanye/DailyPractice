@@ -156,21 +156,35 @@
         function titleCase() {
             let phrase = "the quick brown fox";
             let titleArray = phrase.split(" ");
-            let newPhrase = [];
+            let capitalizedWords = [];
             
             for(let i = 0; i < titleArray.length; i++) {
                 let word = titleArray[i];
-                let firstLetter = word[0];
-                let capital = firstLetter.toUpperCase();
+                let firstLetter = word[0].toUpperCase();
                 let restOfWord = word.slice(1);
-                let newWord = capital + restOfWord;
-                newPhrase.push(newWord);
+                let newWord = firstLetter + restOfWord;
+                capitalizedWords.push(newWord);
 
             }
+            let newPhrase = capitalizedWords.join(" ");
             return newPhrase;
         }
 
         console.log(titleCase());
+
+
+
+        // 6/17 - Reversing Word
+        function reverseWord() {
+            let string = "pineapple";
+            let characters = string.split("");
+            let reverse = characters.reverse();
+            let result = reverse.join("");
+
+            return result;
+        }
+
+        console.log(reverseWord());
 
 
 
