@@ -138,6 +138,42 @@
         console.log(countVowels());
 
 
+        // Find Average
+        function findAverage() {
+            let averageArray = [10, 20, 30, 40 , 50];
+            let sum = 0;
+            
+            for(let i = 0; i < averageArray.length; i++){
+                sum += averageArray[i];
+            }
+
+            let average = sum / averageArray.length;
+            return average;
+        }
+        console.log(findAverage());
+
+        // Title case
+        function titleCase() {
+            let phrase = "the quick brown fox";
+            let titleArray = phrase.split(" ");
+            let newPhrase = [];
+            
+            for(let i = 0; i < titleArray.length; i++) {
+                let word = titleArray[i];
+                let firstLetter = word[0];
+                let capital = firstLetter.toUpperCase();
+                let restOfWord = word.slice(1);
+                let newWord = capital + restOfWord;
+                newPhrase.push(newWord);
+
+            }
+            return newPhrase;
+        }
+
+        console.log(titleCase());
+
+
+
 
 
 
