@@ -302,6 +302,90 @@
         console.log(categorizeGroceryItems());
 
 
+        // Bubble language
+        function bubbleLanguage() {
+            let phrase = "Hello I made a thing";
+            // let words = phrase.split(" ");
+            let vowels = ["a", "e", "i", "o", "u"];
+            let result = "";
+            for(let i = 0; i < phrase.length; i++) {
+                let currentChar = phrase[i];
+                if(vowels.includes(currentChar)) {
+                    result += "ib" + phrase[i];
+                } else {
+                    result += phrase[i];
+                }
+            }
+            return result;
+        }
+
+        console.log(bubbleLanguage());
+
+
+        // Count Occurrences of Each Letter
+        function countLetterOccurrences() {
+            let countLetters= "apple";
+            let count = {};
+
+            for(let i = 0; i < countLetters.length; i++) {
+                let letter = countLetters[i];
+                if(count[letter]) {
+                    // It already exists, so increase the count
+                    count[letter]++;
+                } else {
+                    // First time seeing it, start with 1
+                    count[letter] = 1;
+                }
+            }
+            return count;
+        }
+
+        console.log(countLetterOccurrences());
+
+        // Object Practice #1
+        let book = {
+            title: "The Hidden Code",
+            author: "Jane Matrix",
+            pages: 320
+        };
+
+        
+        console.log(book.author);
+        console.log(book.pages);
+
+        // Object Practice #2
+        let user = {
+            name: "Alex",
+            age: 23,
+            isMember: true
+        };
+
+        console.log(user.name);
+        user.age = 27;
+        user.email = "alex@example.com";
+        console.log(user);
+
+        // Object Practice #3 -> Task: Write a function that counts how many properties this object has.
+        function countObject () {
+            let car = {
+                make: "Toyota",
+                model: "Camry",
+                year: 2015,
+                color: "Blue",
+            };
+            
+            let count = Object.keys(car).length;
+            return count;
+        }
+        console.log(countObject());
+
+
+
+        
+
+
+
+
 
 
 
