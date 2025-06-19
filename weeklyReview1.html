@@ -261,6 +261,45 @@
 
         console.log(fruits); // Set { "apple", "banana" }
 
+        // 6/19 filter even numbers
+        function sumEvenNumbers() {
+            let numbers = [2, 5, 8, 11, 14, 17];
+            let total = 0;
+            for(let i = 0; i < numbers.length; i++) {
+                if(numbers[i] % 2 === 0) {
+                    total += numbers[i];
+                }
+            }
+            return total;
+        }
+
+        console.log(sumEvenNumbers());
+
+
+        // Categorize Grocery Items
+        function categorizeGroceryItems() {
+            let groceries = [
+                { name: "apples", category: "fruits" },
+                { name: "carrots", category: "vegetables" },
+                { name: "cheese", category: "dairy" },
+                { name: "banana", category: "fruits" },
+                { name: "spinach", category: "vegetables" }
+            ];
+
+            let groupGroceries = {};
+
+            for(let i = 0; i < groceries.length; i++) {
+                let item = groceries[i];
+                let category = item.category;
+                if(!groupGroceries[category]) {
+                    groupGroceries[category] = [];
+                }    
+                groupGroceries[category].push(item.name);
+            }
+            return groupGroceries;
+        }
+
+        console.log(categorizeGroceryItems());
 
 
 
