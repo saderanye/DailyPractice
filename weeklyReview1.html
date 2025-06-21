@@ -373,11 +373,27 @@
                 year: 2015,
                 color: "Blue",
             };
-            
+
             let count = Object.keys(car).length;
             return count;
         }
         console.log(countObject());
+
+        // 6/20 - Modifing an Object
+        function updateUser() {
+            let user = {
+                name: "Taylor",
+                age: 22,
+                isMember: false
+            };
+        
+            user.name = "Taylor Swift";
+            user.isMember = true;
+            user.location = "Seattle";
+            return user;
+        }
+
+        console.log(updateUser());
 
 
 
