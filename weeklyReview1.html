@@ -395,6 +395,25 @@
 
         console.log(updateUser());
 
+        //2/21 practice
+        let userTwo = {
+            name: "Jordan",
+            age: 30,
+            favorites: {
+                color: "blue",
+                food: "sushi",
+                book: {
+                    title: "Harry Potter",
+                    author: "J.K. Rowling",
+                }
+            }
+        };
+
+        function getFavoriteBookTitle() {
+            return userTwo.name + "'s favorite book is " + userTwo.favorites.book.title;
+        }
+        console.log(getFavoriteBookTitle());
+
 
 
         
