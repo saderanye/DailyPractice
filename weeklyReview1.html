@@ -395,7 +395,7 @@
 
         console.log(updateUser());
 
-        //2/21 practice
+        //6/21 practice
         let userTwo = {
             name: "Jordan",
             age: 30,
@@ -414,6 +414,25 @@
         }
         console.log(getFavoriteBookTitle());
 
+
+
+        // 6/22 Practice Inventory Object
+        function updateInventory() {
+            let inventory = {
+                apples: 10,
+                bananas: 15,
+                grapes: 8
+            }
+
+            inventory.oranges = 20; //Add oranges
+            inventory.apples += 5; // Increase apples
+            delete inventory.bananas; // Remove Bananas
+
+
+            return inventory;
+        };
+
+        console.log(updateInventory());
 
 
         
