@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly Recap</title>
 </head>
+
 <body>
 
     <script>
@@ -14,7 +16,7 @@
             let numberArray = [1, 2, 3, 4, 5];
             let sum = 0;
 
-            for(let i = 0; i < numberArray.length; i++) {
+            for (let i = 0; i < numberArray.length; i++) {
                 sum += numberArray[i];
             }
 
@@ -29,7 +31,7 @@
             let numbersArray = [1, 2, 3, 4, 5];
             let doubleSum = 0;
 
-            for(let i = 0; i < numbersArray.length; i++) {
+            for (let i = 0; i < numbersArray.length; i++) {
                 doubleSum += numbersArray[i] * 2;
             }
             return doubleSum;
@@ -43,8 +45,8 @@
             let words = ["apple", "banana", "cat", "dog", "elephant"];
             let shortWords = [];
 
-            for(i = 0; i < words.length; i++) {
-                if(words[i].length < 5) {
+            for (i = 0; i < words.length; i++) {
+                if (words[i].length < 5) {
                     shortWords.push(words[i]);
                 }
             }
@@ -59,8 +61,8 @@
             let numbers = [1, 2, 5, 8, 10, 13, 21];
             let evenNumbers = [];
 
-            for(i = 0; i < numbers.length; i++) {
-                if(numbers[i] % 2 === 0) {
+            for (i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 === 0) {
                     evenNumbers.push(numbers[i]);
                 }
             }
@@ -75,7 +77,7 @@
             let wordCapital = ["apple", "banana", "cherry"];
             let capitalizedWords = [];
 
-            for(i = 0; i < wordCapital.length; i++) {
+            for (i = 0; i < wordCapital.length; i++) {
                 let word = wordCapital[i];
                 let firstLetter = word[0];
                 let capital = firstLetter.toUpperCase();
@@ -90,7 +92,7 @@
 
 
         // Count Letters
-        function countLetters(){
+        function countLetters() {
             let word = "bananaaaaa";
             let letter = "a";
             let count = 0;
@@ -127,8 +129,8 @@
             let count = 0;
             let vowels = ["a", "e", "i", "o", "u"];
 
-            for(let i = 0; i < word.length; i++){
-                let letter  = word[i].toLowerCase();
+            for (let i = 0; i < word.length; i++) {
+                let letter = word[i].toLowerCase();
                 if (vowels.includes(letter)) {
                     count++;
                 }
@@ -140,10 +142,10 @@
 
         // Find Average
         function findAverage() {
-            let averageArray = [10, 20, 30, 40 , 50];
+            let averageArray = [10, 20, 30, 40, 50];
             let sum = 0;
-            
-            for(let i = 0; i < averageArray.length; i++){
+
+            for (let i = 0; i < averageArray.length; i++) {
                 sum += averageArray[i];
             }
 
@@ -157,8 +159,8 @@
             let phrase = "the quick brown fox";
             let titleArray = phrase.split(" ");
             let capitalizedWords = [];
-            
-            for(let i = 0; i < titleArray.length; i++) {
+
+            for (let i = 0; i < titleArray.length; i++) {
                 let word = titleArray[i];
                 let firstLetter = word[0].toUpperCase();
                 let restOfWord = word.slice(1);
@@ -191,9 +193,9 @@
         function removeDuplicates() {
             let duplicateArray = [1, 2, 2, 3, 4, 5, 5];
             let newArray = [];
-            for(let i = 0; i < duplicateArray.length; i++) {
+            for (let i = 0; i < duplicateArray.length; i++) {
                 let number = duplicateArray[i];
-                if(!newArray.includes(number)) {
+                if (!newArray.includes(number)) {
                     newArray.push(number);
                 }
             }
@@ -207,7 +209,7 @@
             let sentence = "I love to eat pizza and ice cream";
             let words = sentence.split(" ");
             let count = 0;
-            for(let i = 0; i < words.length; i++) {
+            for (let i = 0; i < words.length; i++) {
                 let word = words[i];
                 count++;
             }
@@ -218,8 +220,8 @@
 
         // FizzBuzz Lite
         function fizzBuzzLite() {
-            for(let i = 1; i < 20; i++) {
-                if(i % 3 === 0) {
+            for (let i = 1; i < 20; i++) {
+                if (i % 3 === 0) {
                     console.log("Fizz");
                 } else if (i % 5 === 0) {
                     console.log("Buzz");
@@ -238,9 +240,9 @@
             let words = phrase.split(" ");
             let seen = new Set();
 
-            for(let i = 0; i < words.length; i++) {
+            for (let i = 0; i < words.length; i++) {
                 let word = words[i];
-                if(seen.has(word)) {
+                if (seen.has(word)) {
                     return word;
                 } else {
                     seen.add()
@@ -265,8 +267,8 @@
         function sumEvenNumbers() {
             let numbers = [2, 5, 8, 11, 14, 17];
             let total = 0;
-            for(let i = 0; i < numbers.length; i++) {
-                if(numbers[i] % 2 === 0) {
+            for (let i = 0; i < numbers.length; i++) {
+                if (numbers[i] % 2 === 0) {
                     total += numbers[i];
                 }
             }
@@ -288,12 +290,12 @@
 
             let groupGroceries = {};
 
-            for(let i = 0; i < groceries.length; i++) {
+            for (let i = 0; i < groceries.length; i++) {
                 let item = groceries[i];
                 let category = item.category;
-                if(!groupGroceries[category]) {
+                if (!groupGroceries[category]) {
                     groupGroceries[category] = [];
-                }    
+                }
                 groupGroceries[category].push(item.name);
             }
             return groupGroceries;
@@ -310,9 +312,9 @@
             let result = "";
             let lastCharacter = "";
 
-            for(let i = 0; i < phrase.length; i++) {
+            for (let i = 0; i < phrase.length; i++) {
                 let currentChar = phrase[i];
-                if(vowels.includes(currentChar) && !vowels.includes(lastCharacter)) {
+                if (vowels.includes(currentChar) && !vowels.includes(lastCharacter)) {
                     result += "ib" + currentChar;
                 } else {
                     result += currentChar;
@@ -327,12 +329,12 @@
 
         // Count Occurrences of Each Letter
         function countLetterOccurrences() {
-            let countLetters= "apple";
+            let countLetters = "apple";
             let count = {};
 
-            for(let i = 0; i < countLetters.length; i++) {
+            for (let i = 0; i < countLetters.length; i++) {
                 let letter = countLetters[i];
-                if(count[letter]) {
+                if (count[letter]) {
                     // It already exists, so increase the count
                     count[letter]++;
                 } else {
@@ -352,7 +354,7 @@
             pages: 320
         };
 
-        
+
         console.log(book.author);
         console.log(book.pages);
 
@@ -369,7 +371,7 @@
         console.log(user);
 
         // Object Practice #3 -> Task: Write a function that counts how many properties this object has.
-        function countObject () {
+        function countObject() {
             let car = {
                 make: "Toyota",
                 model: "Camry",
@@ -389,7 +391,7 @@
                 age: 22,
                 isMember: false
             };
-        
+
             user.name = "Taylor Swift";
             user.isMember = true;
             user.location = "Seattle";
@@ -460,8 +462,30 @@
         }
         console.log(trackCompleted());
 
+        // Another practice: Find the Most Expensive Product
+        function findMostExpensiveProduct() {
+            let products = [
+                { name: "Laptop", price: 1200 },
+                { name: "Phone", price: 800 },
+                { name: "Tablet", price: 600 },
+                { name: "Monitor", price: 300 }
+            ];
 
-        
+            let highestPrice = 0;
+            let mostExpensive = "";
+
+            for(let i = 0; i < products.length; i++) {
+                let currentProduct = products[i];
+                let price = currentProduct.price;
+                if (currentProduct.price > highestPrice) {
+                    highestPrice = currentProduct.price;
+                    mostExpensive = currentProduct.name;
+                }
+            };
+            return "The most expensive product is: " + mostExpensive;
+        }
+
+        console.log(findMostExpensiveProduct());
 
 
 
@@ -473,6 +497,11 @@
 
 
 
-    </script>    
+
+
+
+
+    </script>
 </body>
+
 </html>
