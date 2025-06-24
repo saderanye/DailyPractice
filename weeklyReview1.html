@@ -434,6 +434,29 @@
 
         console.log(updateInventory());
 
+        // 6/23 - Track Completed Task
+        function trackCompleted() {
+            let tasks = [
+                { title: "Do laundry", completed: true },
+                { title: "Dishes", completed: false },
+                { title: "Vacuum", completed: false },
+                { title: "Mop Floor", completed: true }
+            ]
+
+            let completedTasks = [];
+            let count = 0;
+
+            for (let i = 0; i < tasks.length; i++) {
+                if (tasks[i].completed) {
+                    completedTasks.push(tasks[i].title)
+                } else if (tasks[i].completed === true) {
+                    count++;
+                }
+            }
+            return completedTasks;
+        }
+        console.log(trackCompleted());
+
 
         
 
