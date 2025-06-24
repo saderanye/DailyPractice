@@ -304,17 +304,20 @@
 
         // Bubble language
         function bubbleLanguage() {
-            let phrase = "Hello I made a thing";
+            let phrase = "Hello I made a thing, is it now super cool?";
             // let words = phrase.split(" ");
             let vowels = ["a", "e", "i", "o", "u"];
             let result = "";
+            let lastCharacter = "";
+
             for(let i = 0; i < phrase.length; i++) {
                 let currentChar = phrase[i];
-                if(vowels.includes(currentChar)) {
-                    result += "ib" + phrase[i];
+                if(vowels.includes(currentChar) && !vowels.includes(lastCharacter)) {
+                    result += "ib" + currentChar;
                 } else {
-                    result += phrase[i];
+                    result += currentChar;
                 }
+                lastCharacter = currentChar;
             }
             return result;
         }
