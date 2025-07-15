@@ -23,13 +23,33 @@
 
     console.log(filterLongWords());
 
+    function countProperties(){
+        let person = {
+            name: "Jamie",
+            age: 30,
+            job: "Developer"
+        };
+        let keys = Object.keys(person);
+        return keys; 
+    }
 
-    // let groceries = [
-    //         { name: "milk", price: 3 },
-    //         { name: "bread", price: 2 },
-    //         { name: "eggs", price: 4 }
-    //     ];
-        
+    console.log(countProperties());
+
+    function totalGroceryCost(){
+        let groceries = [
+                { name: "milk", price: 3 },
+                { name: "bread", price: 2 },
+                { name: "eggs", price: 4 }
+            ];
+        let total = 0;
+        for (let i = 0; i < groceries.length; i++) {
+            let currentItem = groceries[i];
+            total += currentItem.price;
+        }
+        return total;
+    }
+
+    console.log(totalGroceryCost());
 
 
 </script>
