@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+</head>
+<body>
+
+
+<script>
+    function filterLongWords() {
+        let array = ["pen", "notebook", "cup", "pencil", "book"];
+        let newArray = [];
+        for (i = 0; i < array.length; i++) {
+            let word = array[i];
+            if (word.length > 4) {
+                newArray.push(word);
+            };
+        }
+        return newArray;
+    };
+
+    console.log(filterLongWords());
+
+
+    // let groceries = [
+    //         { name: "milk", price: 3 },
+    //         { name: "bread", price: 2 },
+    //         { name: "eggs", price: 4 }
+    //     ];
+        
+
+
+</script>
+</body>
+</html>
