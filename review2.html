@@ -52,6 +52,26 @@
     console.log(totalGroceryCost());
 
 
+    function filterHighScores(){
+        let students = [
+            { name: "Alice", score: 72 },
+            { name: "Bob", score: 85 },
+            { name: "Charlie", score: 90 },
+            { name: "Diana", score: 68 }
+        ];
+        let highScores = [];
+        for(let i = 0; i < students.length; i++) {
+            if (students[i].score > 80) {
+                highScores.push(students[i]);
+            }
+        }
+        return highScores;
+        
+    }
+    console.log(filterHighScores());
+
+
+
 </script>
 </body>
 </html>
