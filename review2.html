@@ -64,13 +64,22 @@
             if (students[i].score > 80) {
                 highScores.push(students[i]);
             }
+
         }
+        highScores.sort((a, b) => b.score - a.score);
         return highScores;
         
     }
     console.log(filterHighScores());
 
-
+    // Count Properties
+    function countProps(obj){
+        let props = Object.keys(obj);
+        return props.length;
+        }
+    let user = { name: "Sam", age: 30, city: "Seattle"};
+    console.log(countProps(user));
+    
 
 </script>
 </body>
